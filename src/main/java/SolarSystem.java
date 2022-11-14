@@ -1,6 +1,7 @@
+import java.util.*;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class SolarSystem {
     public static void main(String[] args) {
@@ -15,8 +16,7 @@ public class SolarSystem {
         solarSystem.add("uranus");
         System.out.println(solarSystem);
 
-        solarSystem.set(6, "uranus");
-        solarSystem.set(7, "neptune");
+        Collections.swap(solarSystem, 6,7);
         System.out.println(solarSystem);
     }
 }
